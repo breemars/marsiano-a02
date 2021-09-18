@@ -24,11 +24,12 @@ public class Solution12 {
         System.out.print("Enter the number of years: ");
         int years = input.nextInt();
 
-        //calculate interest
-        long total = Math.round(principal * (1 + (rate / 100 * years)));
-
         //OUTPUT
-        System.out.println("After " + years + " years at " + rate + "%, the investment will be worth $" + total + ".");
+        System.out.println("After " + years + " years at " + rate + "%, the investment will be worth $" + getTotal(principal, rate, years) + ".");
+    }
+
+    private static long getTotal(int principal, double rate, int years) {
+        return Math.round(principal * (1 + (rate / 100 * years)));
     }
 
 }

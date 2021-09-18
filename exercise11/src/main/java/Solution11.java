@@ -21,12 +21,14 @@ public class Solution11 {
         System.out.print("What is the exchange rate? ");
         double rate = input.nextDouble();
 
-        //calculate dollars
-        double total = Math.round((euros * rate * 100.0)) / 100.0;
-
         //OUTPUT
         System.out.println(euros + " euros  at an exchange rate of " + rate + " is\n"
-                + total + " U.S. dollars");
+                + getTotal(euros, rate) + " U.S. dollars");
+    }
+
+    //calculate dollars
+    private static double getTotal(int euros, double rate) {
+        return Math.round((euros * rate * 100.0)) / 100.0;
     }
 
 }

@@ -28,12 +28,16 @@ public class Solution06 {
         int range = retire - age;
 
         //Get current year
-        int year = Calendar.getInstance().get(Calendar.YEAR);
+        int year = getYear();
 
         //OUT - Prints out when user can retire
         System.out.println("You have " + range + " years left until you can retire.");
         System.out.println("It's " + year + ", so you can retire in " + (year + range) + ".");
 
+    }
+
+    private static int getYear() {
+        return Calendar.getInstance().get(Calendar.YEAR);
     }
 
 }

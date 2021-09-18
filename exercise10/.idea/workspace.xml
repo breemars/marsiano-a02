@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="286a4672-c121-46bc-8923-68c00acf9ba3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../exercise06/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise06/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise06/src/main/java/Solution06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise06/src/main/java/Solution06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise07/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise07/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise07/src/main/java/Solution07.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise07/src/main/java/Solution07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise09/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise09/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise09/src/main/java/Solution09.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise09/src/main/java/Solution09.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise11/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise11/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise11/src/main/java/Solution11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise11/src/main/java/Solution11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise22/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise22/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise23/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise23/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -36,7 +36,7 @@ public class Solution19 {
         }
 
         //Calculate BMI
-        double bmi = (weight / (height * height)) * 703;
+        double bmi = getBMI(height, weight);
         System.out.printf("Your BMI is %.1f\n", bmi);
 
         //OUTPUT - is user overweight, underweight, or average?
@@ -47,5 +47,9 @@ public class Solution19 {
         else
             System.out.print("You are underweight. You should see your doctor.");
 
+    }
+
+    private static double getBMI(double height, double weight) {
+        return (weight / (height * height)) * 703;
     }
 }

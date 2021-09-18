@@ -40,10 +40,14 @@ public class Solution17 {
         }
 
         //Calculate BAC
-        double BAC = (ounces * 5.14 / weight * (gender == 1 ? 0.73 : 0.66)) - (0.015 * hours);
+        double BAC = getBAC(ounces, weight, gender, hours);
 
         //OUTPUT - ternary operator - is BAC 0.08 or greater?
         System.out.printf("\nYour BAC is %.6f\n", BAC);
         System.out.print(BAC >= 0.08 ? "It is not legal for you to drive." : "It is legal for you to drive.");
+    }
+
+    private static double getBAC(int ounces, int weight, int gender, int hours) {
+        return (ounces * 5.14 / weight * (gender == 1 ? 0.73 : 0.66)) - (0.015 * hours);
     }
 }

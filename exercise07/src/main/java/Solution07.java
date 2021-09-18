@@ -24,12 +24,17 @@ public class Solution07 {
         System.out.print("What is the width of the room in feet? ");
         double width = input.nextDouble();
 
-        //Calculate feet and meters
-        double feet = length * width;
-        double meters = feet * UNITS;
-
         //OUTPUT
-        System.out.printf("You entered %.0f feet by %.0f feet.\nThe area is\n%.0f square feet\n%.3f square meters", length, width, feet, meters);
+        System.out.printf("You entered %.0f feet by %.0f feet.\nThe area is\n%.0f square feet\n%.3f square meters", length, width,
+                getFeet(length, width), getMeters(getFeet(length, width)));
+    }
+
+    private static double getMeters(double feet) {
+        return feet * UNITS;
+    }
+
+    private static double getFeet(double length, double width) {
+        return length * width;
     }
 
 }

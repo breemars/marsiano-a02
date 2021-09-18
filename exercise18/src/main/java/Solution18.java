@@ -28,17 +28,21 @@ public class Solution18 {
 
         //Get value of temperature, convert, and print result
         if(type == 'C' | type == 'c') { //F to C
-            System.out.print("\nPlease enter the temperature in Fahrenheit: ");
+            enterTemp("Fahrenheit");
             int temp = input.nextInt();
             temp = (temp - 32) * 5 / 9;
             System.out.print("The temperature in Celsius is " + temp);
 
         }else if(type == 'F' | type == 'f') { //C to F
-            System.out.print("Please enter the temperature in Celsius: ");
+            enterTemp("Celsius");
             int temp = input.nextInt();
             temp = (temp * 9 / 5) + 32;
             System.out.print("The temperature in Fahrenheit is " + temp);
         }
 
+    }
+
+    private static void enterTemp(String type) {
+        System.out.print("\nPlease enter the temperature in " + type + " : ");
     }
 }

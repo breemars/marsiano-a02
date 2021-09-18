@@ -13,10 +13,21 @@ public class Solution10 {
     - print out final results
      */
 
-    public static final double TAX = 0.055;
+    public static final double TAX_RATE = 0.055;
 
     public static void main(String[] args){
 
+        //calculate subtotal, tax, and total amount
+        double subtotal = getSubtotal();
+        double tax = subtotal * TAX_RATE;
+        double total = subtotal + tax;
+
+        //OUTPUT
+        System.out.printf("Subtotal: $%.2f\nTax: $%.2f\nTotal: $%.2f",
+                subtotal, tax, total);
+    }
+
+    private static double getSubtotal(){
         //INPUT
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the price of item 1: ");
@@ -32,14 +43,7 @@ public class Solution10 {
         System.out.print("Enter the quantity of item 3: ");
         int quantity3 = input.nextInt();
 
-        //calculate subtotal, tax, and total amount
-        double subtotal = (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3);
-        double tax = subtotal * TAX;
-        double total = subtotal + tax;
-
-        //OUTPUT
-        System.out.printf("Subtotal: $%.2f\nTax: $%.2f\nTotal: $%.2f",
-                subtotal, tax, total);
+        return (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3);
     }
 
 }

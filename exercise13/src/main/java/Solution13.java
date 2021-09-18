@@ -26,12 +26,13 @@ public class Solution13 {
         System.out.print("What is the number of times the interest is compounded per year? ");
         int times = input.nextInt();
 
-        //calculate interest
-        double total = Math.round(100.0 * principal * Math.pow((1 + (rate / 100 / times)), times * years)) / 100.0;
-
         //OUTPUT
         System.out.println("$" + principal + " invested at " + rate + "% for " +
-                years + " compound " + times + " times per year is $" + total + ".");
+                years + " compound " + times + " times per year is $" + getTotal(principal, rate, times, years) + ".");
+    }
+
+    private static double getTotal(int principal, double rate, int times, int years) {
+        return Math.round(100.0 * principal * Math.pow((1 + (rate / 100 / times)), times * years)) / 100.0;
     }
 
 }

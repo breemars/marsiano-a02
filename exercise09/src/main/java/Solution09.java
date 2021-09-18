@@ -25,12 +25,13 @@ public class Solution09 {
         System.out.print("What is the width of the room? ");
         int width = input.nextInt();
 
-        //Calculate total gallons
-        double total = Math.ceil(((length * width) / CONVERT));
-
         //OUTPUT
         System.out.printf("You will need to purchase %.0f gallons of paint to cover %d square feet.",
-                total, width * length);
+                getTotal(length, width), width * length);
+    }
+
+    private static double getTotal(int length, int width) {
+        return Math.ceil(((length * width) / CONVERT));
     }
 
 }
